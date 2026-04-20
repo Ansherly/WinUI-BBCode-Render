@@ -6,7 +6,7 @@
 #### 从源开始构建
 1打开Visual Studio 2022.
 
-2安装WinUI3所需的工作负载，包括Win10.0.19041 SDK.
+2安装WinUI3所需的工作负载，包括Win10.0.19041 SDK,.NET8.0环境.
 
 3将“https://pkgs.dev.azure.com/dotnet/CommunityToolkit/_packaging/CommunityToolkit-Labs/nuget/v3/index.json”添加到Nuget源。
 
@@ -94,5 +94,3 @@ MATH_BLOCK ::= (DOLLAR LATEX_TEXT DOLLAR) | (DBL_DOLLAR LATEX_TEXT DBL_DOLLAR)
 
 - 容错性：如果遇到 [b]未闭合，解析器通常将其退化为普通文本处理，而不是直接报错。
 - 大小写不敏感：[URL] 和 [url] 在 CC98 中通常是等效的。
-- 自动链接：即使没有 [url] 标签，纯文本中的`http://`也会被识别。
-- 段落处理：CC98 会自动将连续换行转换为`<p>`或`<br/>`，这在语法定义之外的渲染阶段处理。
